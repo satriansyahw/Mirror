@@ -1,0 +1,17 @@
+D:\ProjectResearch\HelperLibrary\GenHelper\bin\Debug\netcoreapp2.1\GenHelper.deps.json
+D:\ProjectResearch\HelperLibrary\GenHelper\bin\Debug\netcoreapp2.1\GenHelper.dll
+D:\ProjectResearch\HelperLibrary\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.csproj.CoreCompileInputs.cache
+D:\ProjectResearch\HelperLibrary\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.AssemblyInfoInputs.cache
+D:\ProjectResearch\HelperLibrary\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.AssemblyInfo.cs
+D:\ProjectResearch\HelperLibrary\GenHelper\bin\Debug\netcoreapp2.1\GenHelper.pdb
+D:\ProjectResearch\HelperLibrary\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.csprojAssemblyReference.cache
+D:\ProjectResearch\HelperLibrary\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.dll
+D:\ProjectResearch\HelperLibrary\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.pdb
+D:\PROJECTS\Mirror\Helper\GenHelper\bin\Debug\netcoreapp2.1\GenHelper.deps.json
+D:\PROJECTS\Mirror\Helper\GenHelper\bin\Debug\netcoreapp2.1\GenHelper.dll
+D:\PROJECTS\Mirror\Helper\GenHelper\bin\Debug\netcoreapp2.1\GenHelper.pdb
+D:\PROJECTS\Mirror\Helper\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.csproj.CoreCompileInputs.cache
+D:\PROJECTS\Mirror\Helper\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.AssemblyInfoInputs.cache
+D:\PROJECTS\Mirror\Helper\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.AssemblyInfo.cs
+D:\PROJECTS\Mirror\Helper\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.dll
+D:\PROJECTS\Mirror\Helper\GenHelper\obj\Debug\netcoreapp2.1\GenHelper.pdb

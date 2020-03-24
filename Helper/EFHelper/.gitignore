@@ -1,0 +1,6 @@
+Debug/
+.vs/
+Obj/
+obj/
+obj/Debug/netcoreapp2.1/EFHelper.pdb
+*.pdb

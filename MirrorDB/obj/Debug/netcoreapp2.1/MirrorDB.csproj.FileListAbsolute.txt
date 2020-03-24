@@ -1,0 +1,10 @@
+D:\PROJECTS\Mirror\MirrorDB\bin\Debug\netcoreapp2.1\MirrorDB.deps.json
+D:\PROJECTS\Mirror\MirrorDB\bin\Debug\netcoreapp2.1\MirrorDB.dll
+D:\PROJECTS\Mirror\MirrorDB\obj\Debug\netcoreapp2.1\MirrorDB.csproj.CoreCompileInputs.cache
+D:\PROJECTS\Mirror\MirrorDB\obj\Debug\netcoreapp2.1\MirrorDB.AssemblyInfoInputs.cache
+D:\PROJECTS\Mirror\MirrorDB\obj\Debug\netcoreapp2.1\MirrorDB.AssemblyInfo.cs
+D:\PROJECTS\Mirror\MirrorDB\bin\Debug\netcoreapp2.1\MirrorDB.runtimeconfig.json
+D:\PROJECTS\Mirror\MirrorDB\bin\Debug\netcoreapp2.1\MirrorDB.runtimeconfig.dev.json
+D:\PROJECTS\Mirror\MirrorDB\bin\Debug\netcoreapp2.1\MirrorDB.pdb
+D:\PROJECTS\Mirror\MirrorDB\obj\Debug\netcoreapp2.1\MirrorDB.dll
+D:\PROJECTS\Mirror\MirrorDB\obj\Debug\netcoreapp2.1\MirrorDB.pdb

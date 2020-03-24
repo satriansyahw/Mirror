@@ -1,0 +1,14 @@
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.csprojAssemblyReference.cache
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.csproj.CoreCompileInputs.cache
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.AssemblyInfoInputs.cache
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.AssemblyInfo.cs
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\MirrorLayer.deps.json
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\MirrorLayer.dll
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\EFHelper.dll
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\MirrorDB.dll
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\EFHelper.pdb
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\MirrorDB.pdb
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.csproj.CopyComplete
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\bin\Debug\netcoreapp2.1\MirrorLayer.pdb
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.dll
+D:\PROJECTS\Mirror\AccessLayer\MirrorLayer\obj\Debug\netcoreapp2.1\MirrorLayer.pdb
