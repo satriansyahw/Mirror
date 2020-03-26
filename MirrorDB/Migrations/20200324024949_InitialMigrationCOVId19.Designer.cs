@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MirrorDB;
 
 namespace MirrorDB.Migrations
 {
     [DbContext(typeof(MirrorDBContext))]
-    partial class MirrorDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200324024949_InitialMigrationCOVId19")]
+    partial class InitialMigrationCOVId19
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,7 +41,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 174, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 9, 49, 48, 973, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -84,7 +86,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 175, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 9, 49, 48, 974, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -98,7 +100,7 @@ namespace MirrorDB.Migrations
                     b.HasIndex("HPNo")
                         .IsUnique();
 
-                    b.ToTable("DTCovid","dbo");
+                    b.ToTable("DTCovid","dbMob");
                 });
 
             modelBuilder.Entity("MirrorDB.Models.dbo.MTEmp", b =>
@@ -127,7 +129,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 175, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 9, 49, 48, 974, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -141,7 +143,7 @@ namespace MirrorDB.Migrations
                     b.HasIndex("EmpNo")
                         .IsUnique();
 
-                    b.ToTable("MTEmp","dbo");
+                    b.ToTable("MTEmp","dbMob");
                 });
 #pragma warning restore 612, 618
         }

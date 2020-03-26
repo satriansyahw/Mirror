@@ -14,15 +14,15 @@ namespace MirrorDB
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Column(Order = 1), Required, MaxLength(20)]
+        //[Column(Order = 1), Required, MaxLength(20)]
         public string UserName { get; set; }
 
-        [IndexAttribute(IsClustered = true, IsUnique = true)]
+        //[IndexAttribute(IsClustered = true, IsUnique = true)]
         public string UserName2 { get; set; }
 
-        [MultiplePK(IsMultiplePK = true)]
+        //[MultiplePK(IsMultiplePK = true)]
         public string UserName3 { get; set; }
-        [Column(Order = 0), Key, Required]
+       // [Column(Order = 0), Key, Required]
         public bool active_bool { get; set; }
 
         public string insert_by { get; set; }

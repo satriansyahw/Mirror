@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MirrorDB;
 
 namespace MirrorDB.Migrations
 {
     [DbContext(typeof(MirrorDBContext))]
-    partial class MirrorDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200324024831_InitialMigrationCOVId3")]
+    partial class InitialMigrationCOVId3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,7 +41,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 174, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 9, 48, 30, 736, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -84,7 +86,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 175, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 9, 48, 30, 736, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -98,50 +100,7 @@ namespace MirrorDB.Migrations
                     b.HasIndex("HPNo")
                         .IsUnique();
 
-                    b.ToTable("DTCovid","dbo");
-                });
-
-            modelBuilder.Entity("MirrorDB.Models.dbo.MTEmp", b =>
-                {
-                    b.Property<bool>("active_bool")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(true);
-
-                    b.Property<string>("EmpName")
-                        .IsRequired()
-                        .HasMaxLength(200);
-
-                    b.Property<string>("EmpNo")
-                        .IsRequired()
-                        .HasMaxLength(100);
-
-                    b.Property<string>("HPNo")
-                        .IsRequired()
-                        .HasMaxLength(100);
-
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("insert_by");
-
-                    b.Property<DateTime>("insert_date")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 175, DateTimeKind.Local));
-
-                    b.Property<string>("update_by");
-
-                    b.Property<DateTime?>("update_date");
-
-                    b.HasKey("active_bool");
-
-                    b.HasIndex("EmpName")
-                        .IsUnique();
-
-                    b.HasIndex("EmpNo")
-                        .IsUnique();
-
-                    b.ToTable("MTEmp","dbo");
+                    b.ToTable("DTCovid","dbMob");
                 });
 #pragma warning restore 612, 618
         }

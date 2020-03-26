@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MirrorDB;
 
 namespace MirrorDB.Migrations
 {
     [DbContext(typeof(MirrorDBContext))]
-    partial class MirrorDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200324035328_InitialMigration23")]
+    partial class InitialMigration23
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,7 +41,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 174, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 53, 27, 803, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -84,7 +86,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 175, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 53, 27, 804, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 
@@ -127,7 +129,7 @@ namespace MirrorDB.Migrations
 
                     b.Property<DateTime>("insert_date")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 55, 13, 175, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2020, 3, 24, 10, 53, 27, 804, DateTimeKind.Local));
 
                     b.Property<string>("update_by");
 

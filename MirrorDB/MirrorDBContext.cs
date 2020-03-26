@@ -1,13 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MirrorDB.Models.dbMob;
+using MirrorDB.Models.dbo;
 using System;
 using System.Reflection;
 
 namespace MirrorDB
 {
-    public partial class MirrorDBContext:DbContext
+    public partial class MirrorDBContext : DbContext
     {
         /*Declare database info here*/
         public DbSet<FakeTable> FakeTable { get; set; }
+        public DbSet<DTCovid> DTCovid { get; set; }
+        public DbSet<DtCheckCov> DtCheckCov { get; set; }
+        public DbSet<DtLogin> DtLogin { get; set; }
+
+        //public DbSet<DTCovid> DTCovid { get; set; }
+        public DbSet<MTEmp> MTEmp { get; set; }
         public MirrorDBContext()
         {
         }
@@ -27,7 +35,9 @@ namespace MirrorDB
 
         private string ConnectionString()
         {
-            string connstring = string.Format(@"Server=localhost\sqlexpress;Database=GenDB;Trusted_Connection=True;");
+            string connstring = string.Format(@"Server=172.16.104.66\lacerta;Database=GODB;User id=pebdev;password=gadogado;");
+
+
             return connstring;
         }
 
@@ -75,7 +85,20 @@ namespace MirrorDB
                 }
             }
         }
+        private void SetTablePrimaryKey(ModelBuilder modelBuilder)
+        {
 
+            modelBuilder.Entity<DTCovid>()
+                   .HasKey(c => new { c.Id, });
+            modelBuilder.Entity<MTEmp>()
+                  .HasKey(c => new { c.Id, });
+
+            //foreach (var entity in modelBuilder.Model.GetEntityTypes())
+            //{
+            //    modelBuilder.Entity<DTCovid>()
+            //         .HasKey(c => new { c.Id,});
+            //}
+        }
         private void SetTableDefaultAttributes(ModelBuilder modelBuilder)
         {
             foreach (var entity in modelBuilder.Model.GetEntityTypes())

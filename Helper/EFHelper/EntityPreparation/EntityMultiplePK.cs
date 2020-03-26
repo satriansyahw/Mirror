@@ -177,7 +177,7 @@ namespace EFHelper.EntityPreparation
             lsfMultiplePK = new List<SearchField>();
             var cekPropWithCustomAttr = (from a in ((PropertyInfo[])entity.GetType().GetProperties()).AsQueryable() where a.CustomAttributes.Count() > 0 select a).ToList();
             var cekPropMultiplePK = cekPropWithCustomAttr.Where(a => a.CustomAttributes.ToList().Any(x => x.AttributeType.ToString().Split(".").Last() == multiplePKAttr
-            & x.NamedArguments.ToList().Any(y => y.MemberName == multiplePKMember & (bool)y.TypedValue.Value == (bool)true)
+            & x.NamedArguments.ToList().Any(y => y.MemberName == multiplePKMember)// & (bool)y.TypedValue.Value == (bool)true)
             )).ToList();
             if(cekPropMultiplePK.Count > 0)
             {
@@ -199,7 +199,7 @@ namespace EFHelper.EntityPreparation
             lsfMultiplePK = new List<SearchField>();
             var cekPropWithCustomAttr = (from a in ((PropertyInfo[])entity.GetType().GetProperties()).AsQueryable() where a.CustomAttributes.Count() > 0 select a).ToList();
             var cekPropMultiplePK = cekPropWithCustomAttr.Where(a => a.CustomAttributes.ToList().Any(x => x.AttributeType.ToString().Split(".").Last() == multiplePKAttr
-            & x.NamedArguments.ToList().Any(y => y.MemberName == multiplePKMember & (bool)y.TypedValue.Value == (bool)true)
+            & x.NamedArguments.ToList().Any(y => y.MemberName == multiplePKMember)// & (bool)y.TypedValue.Value == (bool)true)
             )).ToList();
             var PIdentity =  ColumnPropGet.GetInstance.GetIdentityColumnProps<T>();// Identity PK/identity PK like, means ordinary position must set to 0 in database table
             if (cekPropMultiplePK.Count > 0 & PIdentity != null)  /// multiple PK cannot only be checked if only if the ordinary position > 0

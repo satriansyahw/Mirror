@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Models\schema2\" />
-    <Folder Include="Models\schema1\" />
   </ItemGroup>
 
   <ItemGroup>

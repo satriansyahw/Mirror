@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MirrorDB;
 
 namespace MirrorDB.Migrations
 {
     [DbContext(typeof(MirrorDBContext))]
-    partial class MirrorDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200324035513_InitialMigration232")]
+    partial class InitialMigration232
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
