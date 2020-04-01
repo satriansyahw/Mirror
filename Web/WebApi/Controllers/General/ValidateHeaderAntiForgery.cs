@@ -40,7 +40,7 @@ namespace WebApi.Controllers.General
                 {
                     if (TheSun.Contains("TheSun"))
                     {
-                        checker = TheSun.Replace("TheSun", string.Empty);
+                        checker = TheSun.Replace("TheSun", string.Empty).Trim();
                         var checkerResult = cacher.GetValue(checker);
                         if (checkerResult == null)
                         {
