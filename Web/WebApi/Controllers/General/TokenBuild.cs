@@ -11,6 +11,11 @@ using System.Threading.Tasks;
 
 namespace WebApi.Controllers.General
 {
+    public class TokenResult
+    {
+        public string AccessToken { get; set; }
+        public string SIDToken { get; set; }
+    }
     public class TokenBuild:ITokenBuild
     {
         private readonly MemoryCacher cacher = MemoryCacher.GetInstance;
@@ -30,9 +35,9 @@ namespace WebApi.Controllers.General
             }
         }
 
-        public bool CreateToken(IConfiguration configuration,string userName,string email)
+        public TokenResult CreateToken(IConfiguration configuration,string userName,string email)
         {
-            bool result = false;
+            TokenResult result = new TokenResult();
             string tokenKey = configuration.GetSection("APISettings:TokenKey").Value;
             string tokenIssuer = configuration.GetSection("APISettings:TokenIssuer").Value;
             string tokenAudience = configuration.GetSection("APISettings:TokenAudience").Value;
@@ -58,7 +63,8 @@ namespace WebApi.Controllers.General
                   signingCredentials: creds);
                 this.CreateCacheTokenSid(tokenSid);
                 var myToken = new JwtSecurityTokenHandler().WriteToken(token);
-                result = true;
+                result.AccessToken = myToken;
+                result.SIDToken = tokenSid;
             }
             return result;
         }
