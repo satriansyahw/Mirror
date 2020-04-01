@@ -1,1 +1,9 @@
 ﻿https://localhost:5001/api/values/Get
+ 
+User-Agent: Fiddler
+Content-Type: application/json; charset=utf-8
+Content-Length: 0
+Host: 172.16.81.6:1262
+TheSun : TheSun 9eb61ec21e48499a9b43ebd9a8072c34
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIxNjAwOTEiLCJlbWFpbCI6IjA4NTcyMjIzMzI0MUAyMTYwMDkxLmNvbSIsInNpZCI6IjllYjYxZWMyMWU0ODQ5OWE5YjQzZWJkOWE4MDcyYzM0IiwiYXV0aF90aW1lIjoiMjAyMC0wNC0wMyAwMzoxNToyNyIsImV4cCI6MTU4NTkwMTcyNywiaXNzIjoiZnJpZWRDaGlja2VuQElzc3VlciIsImF1ZCI6ImZyaWVkTm9kZGxlc0BBdWRpZW5jZSJ9.skP-as1jf_wka7FV3gvg_YFhuy8fgrGQvvpgN8Zsubo
+ 
