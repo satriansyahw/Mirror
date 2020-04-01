@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebApi.Controllers.General
 {
 
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [EnableCors("MirrorCORS")]
     [ValidateHeaderAntiForgery]
